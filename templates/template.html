@@ -1,0 +1,35 @@
+<!--
+#Autor: Jonas Deichelmann
+#File: template.html
+#Class: CST205
+#Description: This is the template.html Source file for the finalproject
+#Date: 11/16/2017
+-->
+
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+<!DOCTYPE html>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <h1>Audio</h1>
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+<p>Create your own music with your Input, your mood, Lets surprise whats happening</p>
+<select class="form-control" id="mood" name="modd">
+  <option>Select Mood</option>
+  <option>Happy</option>
+  <option>Sad</option>
+  <option>Mad</option>
+  <option>Chill</option>
+</select>
+<form>
+  Your Musical sentence:<br>
+  <input type="text" name="sentence"><br>
+</form>
+{% endblock %}
