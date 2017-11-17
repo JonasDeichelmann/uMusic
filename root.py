@@ -14,8 +14,7 @@ Bootstrap(app)
 @app.route('/')
 @app.route('/index')
 def template_func():
-    for i in range(3):
-        randomNumber = int(random.uniform(0,10))
-        print(randomNumber)
+    randomNumber = int(random.uniform(0,10))
+    print(randomNumber)
     #create randomNumber for the next Step, when we want to create random music
     return render_template('template.html')
