@@ -1,8 +1,10 @@
 #Autor: Jonas Deichelmann
 #File: root.py
 #Class: CST205
+#Created by: Jonas Deichelmann
 #Description: This is the root Source file for the final project
-#Date: 11/16/2017
+#Created on: 11/16/2017
+#Last change: 11/21/2017
 
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
