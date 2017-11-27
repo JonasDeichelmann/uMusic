@@ -11,8 +11,8 @@ import math
 out = []
 inp=input()
 for i in inp:
-    out.append(int(math.sqrt(math.pow(ord(i), 3))))
-for j in range(len(out)-1):
+    out.append(ord(i))
+for j in range(len(out)):
     randomNumber = int(random.uniform(out[j],out[j-1]))
     print(randomNumber)
 print(out)
