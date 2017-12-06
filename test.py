@@ -1,16 +1,26 @@
 import os
 import glob
+import pitch
 
-#pitch_class = user_choice
+pitch_classes = pitch.pitch_classes
+
+pitch_class = pitch_classes["Bb Major"]
+
+melody = [58, -1, 62, -1, 65, -1, 70, -2, 65, -2, 62, -2, 58]
+
+performance = "multiconditioned_performance_with_dynamics"
 
 # Generates a midi file with the given parameters
-first = "performance_rnn_generate --config=pitch_conditioned_performance_with_dynamics --bundle_file=pitch_conditioned_performance_with_dynamics.mag --output_dir=generated --num_outputs=1"
-pitch = "--pitch_class_histogram=\"[2, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0]\""
-steps = "--num_steps=1280"
+first = "performance_rnn_generate --config=" + performance + " --bundle_file=" + performance + ".mag --output_dir=generated --num_outputs=1"
+steps = "--num_steps=6000"
+notes_per_second = "--notes_per_second=4"
 
 # melody is the starting sequence of notes given to the network
 primer = "--primer_melody=\"" + str(melody) + "\""
+chord = "--primer_pitches=\"[58, 62, 65]\""
+pitch = "--pitch_class_histogram=\"" + pitch_class + "\""
 
+command = first + " " + pitch + " " + steps + " " + notes_per_second + " " + primer + " " + chord
 
 os.system(command)
 
