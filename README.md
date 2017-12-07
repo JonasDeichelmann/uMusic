@@ -1,5 +1,8 @@
-# uMusic (Project for CST 205 Class at CSU Monterey Bay)
+# uMusic (Project for CST 205 Class at CSU Monterey Bay) Date: 12/7/2017
 ![Python Badge](https://img.shields.io/badge/language-Python-brightgreen.svg)
+
+## GitHub
+Access the project's GitHub repositroy [here](https://github.com/JonasDeichelmann/uMusic).
 
 ## Description
 With our project "uMusic" we want to give the user the opportunity to create his own music, with a word or a sentence and his current mood. The user's input runs through the [Magenta-AI](https://magenta.tensorflow.org) and creates something like music for the user.
