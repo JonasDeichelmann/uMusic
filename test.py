@@ -6,13 +6,13 @@ pitch_classes = pitch.pitch_classes
 
 pitch_class = pitch_classes["C Minor"]
 
-melody = [58, -1, 62, -1, 65, -1, 70, -2, 65, -2, 62, -2, 58]
+melody = [60, -1, 64, -1, , -1, 67, -2, 64, -2, 64, -2, 60]
 
 #input_melody = user_input
 
 # Generates a midi file with the given parameters
 
-def GenerateMusic(notes_per_second=3, input_melody=[60,-1,62], input_chord=[58, 62, 65], pitch_class=pitch_classes["C Major"]):
+def GenerateMusic(notes_per_second=3, input_melody=[60,-1,62], input_chord=[60, 64, 67], pitch_class=pitch_classes["C Major"]):
 
 	performance = "multiconditioned_performance_with_dynamics"
 
@@ -39,4 +39,4 @@ def GenerateMusic(notes_per_second=3, input_melody=[60,-1,62], input_chord=[58, 
 	# Remove the midi file
 	os.system("del " + files[0])
 
-GenerateMusic(notes_per_second, melody, input_chord, pitch_class)
+GenerateMusic(notes_per_second=5, input_melody=melody, pitch_class=pitch_class)
