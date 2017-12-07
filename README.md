@@ -1,5 +1,5 @@
-# uMusic (Project for CST 205 Class at CSU Monterey Bay) Date: 12/7/2017
-![Python Badge](https://img.shields.io/badge/language-Python-brightgreen.svg)
+# uMusic (Project for CST 205 Class at CSU Monterey Bay) 
+![Python Badge](https://img.shields.io/badge/language-Python-brightgreen.svg)  Date: 12/7/2017
 
 ## GitHub
 Access the project's GitHub repositroy [here](https://github.com/JonasDeichelmann/uMusic).
