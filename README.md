@@ -1,8 +1,8 @@
-# Your Music (Project for CST 205 Class at the CSU Monterey Bay)
+# uMusic (Project for CST 205 Class at the CSU Monterey Bay)
 ![Python Badge](https://img.shields.io/badge/language-Python-brightgreen.svg)
 
 ## Description
-With our project "Your Music" we want to give the user the oppertunity to create his own music, with an word or an sentence and his mood from the user. With the User-Input runs thru the [Magenta-AI](https://magenta.tensorflow.org) and creates something like music for the user.
+With our project "uMusic" we want to give the user the opportunity to create his own music, with a word or a sentence and his current mood. The user's input runs thru the [Magenta-AI](https://magenta.tensorflow.org) and creates something like music for the user.
 
 ## Installation  
 * Please install the latest version of [Python 3.6.](https://www.python.org/downloads/)  
@@ -41,5 +41,5 @@ Then open in your browser `http://127.0.0.1:5000/`
 
 ## Author
 [Brandon Ginn](https://github.com/bginn)  
-[David Wong](https://github.com/dvw89)  
+[David Wong](https://github.com/dvw89), Mail: dawong@csumb.edu
 [Jonas Deichelmann](https://github.com/JonasDeichelmann), Mail: developing@deichelmann.com, Web: www.Deichelmann.com, [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/jdeichelmann)
