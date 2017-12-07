@@ -9,6 +9,12 @@
 import random
 import math
 
+def makeMelody(randInput):
+    melody = []
+    for each in randInput:
+        
+    return melody
+
 def createRondom(myInput):
     randomNumber = int(random.uniform(60,90))
     randomNumber1 = randomNumber/myInput
@@ -24,8 +30,8 @@ inp = input()
 for i in inp:
     out.append(ord(i))
 for j in range(len(out)):
-    print(out[j])
     temp = createRondom(int(out[j]))
     out[j]=temp
+    out = makeMelody(out)
 print(out)
 #return out
