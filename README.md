@@ -2,7 +2,7 @@
 ![Python Badge](https://img.shields.io/badge/language-Python-brightgreen.svg)
 
 ## Description
-With our project "uMusic" we want to give the user the opportunity to create his own music, with a word or a sentence and his current mood. The user's input runs thru the [Magenta-AI](https://magenta.tensorflow.org) and creates something like music for the user.
+With our project "uMusic" we want to give the user the opportunity to create his own music, with a word or a sentence and his current mood. The user's input runs through the [Magenta-AI](https://magenta.tensorflow.org) and creates something like music for the user.
 
 ## Installation  
 * Please install the latest version of [Python 3.6.](https://www.python.org/downloads/)  
