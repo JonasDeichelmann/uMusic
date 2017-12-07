@@ -13,8 +13,8 @@
 <!DOCTYPE html>
 <html>
 
-The selected mood was {{ test_mood }}.
-The input sentence was {{ test_text }}.
+The selected mood was {{ request.args.get('test_mood') }}.
+The input sentence was {{ request.args.get('test_text') }}.
 
 </html>
 
