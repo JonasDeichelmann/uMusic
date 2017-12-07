@@ -1,0 +1,21 @@
+<!--
+#Author: David Wong
+#File: template.html
+#Class: CST205
+#Description: A test webpage intended to prove that I can get input from the text field and drop-down list in "index.html". Currently I *am* getting the correct information passed to "test_mood" and "test_index" from "index.html", but I can't make those string appear in this webpage.
+#Date: 11/16/2017
+-->
+
+{% extends "bootstrap/base.html" %}
+
+{% block navbar %}
+
+<!DOCTYPE html>
+<html>
+
+The selected mood was {{ test_mood }}.
+The input sentence was {{ test_text }}.
+
+</html>
+
+{% endblock %}
