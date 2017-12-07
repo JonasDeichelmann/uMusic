@@ -20,7 +20,7 @@ Run the following commands:
 ```export FLASK_APP=root.py```  
 ```flask run```
 
-The terminal should promt:  
+The terminal should prompt:  
 ` Serving Flask app "root"  
  Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)`
 
@@ -30,7 +30,7 @@ Then open in your browser `http://127.0.0.1:5000/`
 ```set FLASK_APP=hello_flask.py```  
 ```flask run```
 
-The terminal should promt:  
+The terminal should prompt:  
 ` Serving Flask app "root"  
  Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)`
 
