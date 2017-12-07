@@ -1,4 +1,4 @@
-# uMusic (Project for CST 205 Class at the CSU Monterey Bay)
+# uMusic (Project for CST 205 Class at CSU Monterey Bay)
 ![Python Badge](https://img.shields.io/badge/language-Python-brightgreen.svg)
 
 ## Description
