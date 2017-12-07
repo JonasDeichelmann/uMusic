@@ -41,5 +41,5 @@ Then open in your browser `http://127.0.0.1:5000/`
 
 ## Author
 [Brandon Ginn](https://github.com/bginn)  
-[David Wong](https://github.com/dvw89), Mail: dawong@csumb.edu
+[David Wong](https://github.com/dvw89), Mail: dawong@csumb.edu  
 [Jonas Deichelmann](https://github.com/JonasDeichelmann), Mail: developing@deichelmann.com, Web: www.Deichelmann.com, [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/jdeichelmann)
