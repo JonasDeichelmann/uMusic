@@ -24,10 +24,10 @@ The terminal should promt:
 Then open in your browser `http://127.0.0.1:5000/`
 
 #### For Windows
-```set FLASK_APP=hello_flask.py```
+```set FLASK_APP=hello_flask.py```  
 ```flask run```
 
-The terminal should promt:
+The terminal should promt:  
 ` Serving Flask app "root"  
  Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)`
 
