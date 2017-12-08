@@ -33,14 +33,3 @@ def createRondom(myInput):
     if int(randomNumber) < 20:
         createRondom(int(randomNumber))
     return int(randomNumber)
-
-out = []
-inp = input()
-for i in inp:
-    out.append(ord(i))
-for j in range(len(out)):
-    temp = createRondom(int(out[j]))
-    out[j]=temp
-out = makeMelody(out)
-print(out)
-#return out
