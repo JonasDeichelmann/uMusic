@@ -11,8 +11,17 @@ import math
 
 def makeMelody(randInput):
     melody = []
-    for each in randInput:
-        
+    for i in range(len(randInput)-1):
+        if abs(int(randInput[i])-int(randInput[i+1])) > 2:
+            k=0
+            for j in range(int(abs(int(randInput[i])-int(randInput[i+1]))/2)):
+                if randInput[i]> randInput[i+1]:
+                    melody.append(randInput[i]-k)
+                else:
+                    melody.append(randInput[i]+k)
+                k += 2
+        else:
+            melody.append(randInput[i])
     return melody
 
 def createRondom(myInput):
@@ -32,6 +41,6 @@ for i in inp:
 for j in range(len(out)):
     temp = createRondom(int(out[j]))
     out[j]=temp
-    out = makeMelody(out)
+out = makeMelody(out)
 print(out)
 #return out
