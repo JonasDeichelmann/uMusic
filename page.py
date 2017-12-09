@@ -28,12 +28,12 @@ def index():
 		speed = request.form['speed']
 		per_second = 5
 		pitch = pitch_classes[pitch_dict[mood]]
-		if (speed == "Fast") {
+		if (speed == "Fast"):
 			per_second = 7
-		}
-		elif (speed == "Slow") {
+		
+		elif (speed == "Slow"):
 			per_second = 3
-		}
+		
 		note_list = functions.handleInput(sentence)
 		GenerateMusic(speed, note_list, pitch_class=pitch)
 		return render_template('sound.html')
