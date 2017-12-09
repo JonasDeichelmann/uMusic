@@ -37,10 +37,10 @@ The terminal should prompt:
 Then open in your browser `http://127.0.0.1:5000/`
 
 ## Work to Do:  
-- [x] Setting up the UI  
-- [x] Creating simple music  
-- [ ] Using AI to make it more complex  
-- [ ] Get the user the oppertunity to create music from diffrent instruments  
+- [x] Setting up the UI.  
+- [x] Creating simple music. 
+- [ ] Using AI to make it more complex.  
+- [ ] Get the user the opportunity to create music with diffrent instruments.  
 
 ## Author
 [Brandon Ginn](https://github.com/bginn)  
