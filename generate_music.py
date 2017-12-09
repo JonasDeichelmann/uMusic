@@ -9,7 +9,7 @@ import os
 import glob
 import pitch
 
-def GenerateMusic(notes_per_second=3, input_melody=[60,-1,62], input_chord=[60, 64, 67], pitch_class="C Major"):
+def GenerateMusic(notes_per_second=3, input_melody=[60,-1,62], input_chord=[60, 64, 67], pitch_class="[2, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1]"):
 
 	performance = "multiconditioned_performance_with_dynamics"
 
