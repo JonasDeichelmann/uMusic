@@ -4,7 +4,7 @@
 #Created by: Jonas Deichelmann
 #Description: This is the function Source file for the final project. The File get the Input String from the user and works with this
 #Created on: 11/21/2017
-#Last change: 12/07/2017
+#Last change: 12/08/2017
 
 import random
 import math
