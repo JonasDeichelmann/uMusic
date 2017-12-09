@@ -10,6 +10,7 @@ from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from functions import createRondom
 from functions import makeMelody
+from functions import handleInput
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -17,14 +18,7 @@ Bootstrap(app)
 @app.route('/')
 @app.route('/index')
 def template_func():
-    out = []
-    inp = "test"
-    for i in inp:
-        out.append(ord(i))
-    for j in range(len(out)):
-        temp = createRondom(int(out[j]))
-        out[j]=temp
-    out = makeMelody(out)
-    print(out)
-    #create randomNumber for the next Step, when we want to create random music
+    inp="test"
+    noteList=handleInput(inp)
+    print(noteList)
     return render_template('template.html')

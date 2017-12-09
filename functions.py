@@ -33,3 +33,16 @@ def createRondom(myInput):
     if int(randomNumber) < 20:
         createRondom(int(randomNumber))
     return int(randomNumber)
+def handleInput(myInput):
+    out = []
+    inp = myInput
+    #Converting each character from the input into an ASCII Number and add these to the list
+    for i in inp:
+        out.append(ord(i))
+    for j in range(len(out)):
+        #Call the random function with the ASCII Letter
+        temp = createRondom(int(out[j]))
+        out[j]=temp
+    #Create the steps between the numbers
+    out = makeMelody(out)
+    return(out)
