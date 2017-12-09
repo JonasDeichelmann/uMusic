@@ -6,9 +6,9 @@
 #Changed: 12/01/2017
 
 mood = {
-	"Happy" : "C Major"
-	"Sad" : "C Minor"
-	"Mad" : "F Major"
+	"Happy" : "C Major",
+	"Sad" : "C Minor",
+	"Mad" : "F Major",
 	"Chill" : "B Minor"
 }
 
