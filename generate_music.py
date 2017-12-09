@@ -11,9 +11,11 @@ import pitch
 
 def GenerateMusic(notes_per_second=3, input_melody=[60,-1,62], input_chord=[60, 64, 67], pitch_class="[2, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1]"):
 
+	os.system("del /q static\\music\\*")
+
 	performance = "multiconditioned_performance_with_dynamics"
 
-	first = "performance_rnn_generate --config=" + performance + " --bundle_file=" + performance + ".mag --output_dir=generated --num_outputs=1"
+	first = "performance_rnn_generate --config=" + performance + " --bundle_file=" + performance + ".mag --output_dir=static/music/ --num_outputs=1"
 
 	# A step is 10 ms.  Hence, 3000 steps will generate 30 seconds of music
 	steps = "--num_steps=3000"
@@ -25,13 +27,19 @@ def GenerateMusic(notes_per_second=3, input_melody=[60,-1,62], input_chord=[60, 
 	pitch = "--pitch_class_histogram=\"" + pitch_class + "\""
 
 	command = first + " " + pitch + " " + steps + " " + notes_per_second + " " + primer + " " + chord
-
+	
+	# Converting the midi file to a wav file using pySynth, the .wav is placed in the current directory
 	os.system(command)
 
-	files = glob.glob("generated/*.mid")
+	files = glob.glob("static/music/*.mid")
 
 	# Converting the midi file to a wav file using pySynth, the .wav is placed in the current directory
 	os.system("python .\PySynth-2.3\\readmidi.py " + files[0])
 
+	os.replace("midi.wav", "static/music/midi.wav")
+
 	# Remove the midi file
-	os.system("del " + files[0])
+	#files = glob.glob("\static\music\*.mid")
+
+	#print(files[0])
+	
