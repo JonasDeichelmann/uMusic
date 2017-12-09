@@ -1,16 +1,13 @@
+#Author: Brandon Ginn
+#File: generate_music.py
+#Class: CST 205
+#Description: This file contains a GenerateMusic function that creates a .wav file based on the given parameters 
+#Created: 12/01/2017
+#Changed: 12/08/2017
+
 import os
 import glob
 import pitch
-
-pitch_classes = pitch.pitch_classes
-
-pitch_class = pitch_classes["C Minor"]
-
-melody = [60, -1, 64, -1, , -1, 67, -2, 64, -2, 64, -2, 60]
-
-#input_melody = user_input
-
-# Generates a midi file with the given parameters
 
 def GenerateMusic(notes_per_second=3, input_melody=[60,-1,62], input_chord=[60, 64, 67], pitch_class=pitch_classes["C Major"]):
 
@@ -38,5 +35,3 @@ def GenerateMusic(notes_per_second=3, input_melody=[60,-1,62], input_chord=[60, 
 
 	# Remove the midi file
 	os.system("del " + files[0])
-
-GenerateMusic(notes_per_second=5, input_melody=melody, pitch_class=pitch_class)
