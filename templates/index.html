@@ -3,7 +3,7 @@
 #File: index.html
 #Class: CST205
 #Description: A beginning intro webpage (based off of the work of Jonas Deichelman) for our project.
-#Date: 12/6/2017
+#Date: 12/8/2017
 -->
 
 {% extends "bootstrap/base.html" %}
@@ -21,16 +21,23 @@
 </nav>
 <br>
 <form method="POST" action="">
-<p>Enter a sentence and a mood to generate unique music.</p>
+<p>Enter a mood to generate unique music.</p>
 <select name="mood" class="form-control">
-  <option value="Default">Select Mood</option>
   <option value="Happy">Happy</option>
   <option value="Sad">Sad</option>
   <option value="Mad">Mad</option>
   <option value="Chill">Chill</option>
 </select>
 <br>
-  Your Musical sentence:<br>
+<p>Enter a speed for notes per second for your melody.</p>
+<select name="speed" class="form-control">
+  <option value="Default">Select speed</option>
+  <option value="Fast">Fast</option>
+  <option value="Medium">Medium</option>
+  <option value="Slow">Slow</option>
+</select>
+<br>
+  <p>Enter some text to use in generating your music:</p>
   <input type="text" name="sentence"><br>
   <button type="Submit">Submit</button><br>
 </form>

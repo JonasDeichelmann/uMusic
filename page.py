@@ -6,6 +6,9 @@ Description: The background Flask code for our project. This is an early prototy
 Date: 12/6/2017
 """
 
+from generate_music import GenerateMusic
+import functions
+import pitch
 from flask import Flask, render_template, request, redirect, url_for
 from flask_bootstrap import Bootstrap
 from pprint import pprint
@@ -13,13 +16,27 @@ from pprint import pprint
 app = Flask(__name__)
 Bootstrap(app)
 
+pitch_dict = pitch.mood
+pitch_classes = pitch.pitch_classes
+
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
 	if request.method == "POST":
 		mood = request.form['mood']
 		sentence = request.form['sentence']
-		return redirect(url_for('test', test_mood=mood, test_text=sentence))
+		speed = request.form['speed']
+		per_second = 5
+		pitch = pitch_classes[pitch_dict[mood]]
+		if (speed == "Fast") {
+			per_second = 7
+		}
+		elif (speed == "Slow") {
+			per_second = 3
+		}
+		note_list = functions.handleInput(sentence)
+		GenerateMusic(speed, note_list, pitch_class=pitch)
+		return render_template('sound.html')
 	return render_template('index.html')
 	
 @app.route('/test')
