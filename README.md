@@ -17,21 +17,21 @@ With our project "uMusic" we want to give the user the opportunity to create his
 
 Run the following commands:
 #### For Mac
-```export FLASK_APP=root.py```  
+```export FLASK_APP=page.py```  
 ```flask run```
 
 The terminal should prompt:  
-` Serving Flask app "root"  
+` Serving Flask app "page"  
  Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)`
 
 Then open in your browser `http://127.0.0.1:5000/`
 
 #### For Windows
-```set FLASK_APP=hello_flask.py```  
+```set FLASK_APP=page.py```  
 ```flask run```
 
 The terminal should prompt:  
-` Serving Flask app "root"  
+` Serving Flask app "page"  
  Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)`
 
 Then open in your browser `http://127.0.0.1:5000/`
